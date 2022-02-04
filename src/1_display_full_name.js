@@ -1,3 +1,27 @@
+
+  function displayFullName(nameAndsurname) {
+    let nametoarray = nameAndsurname.split(' ');
+    console.log(nametoarray);
+    let secondelement = nametoarray.slice(-1)[0];
+    console.log(secondelement);
+    let message = 'My name is';
+    let semi =  ',';
+
+      if (nametoarray.length >= 2) {
+        let lastelement = [...nametoarray].pop();
+        return `${message} ${lastelement}${semi} ${nameAndsurname}`;
+      } 
+      else 
+        return `${message} ${secondelement}${semi} ${nameAndsurname} `;
+  
+  };
+
+
+
+
+
+
+
 module.exports = function displayFullName() {
   // TODO Implement me.
 };
