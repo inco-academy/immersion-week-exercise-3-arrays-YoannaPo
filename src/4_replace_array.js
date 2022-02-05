@@ -1,11 +1,11 @@
-module.exports = function replaceArray() {
+function replaceArray() {
   // TODO Implement me.
 };
 
 /**Weryfikacja */
-
+module.exports = replaceArray;
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
