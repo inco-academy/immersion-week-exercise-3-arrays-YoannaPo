@@ -1,5 +1,37 @@
 function matrixGen(height, width) {
-  // TODO Implement me.
+  let myArr1 = [];
+
+    
+ //NIESTETY REULTAT NIE JEST TYM OCZEKIWANYM w weryfikacji, a ja nie widzę różnicy, nie wiem jak to naprawić
+ 
+   for (let i = 0; i < height; i++) {
+
+       //creates empty line
+       myArr1.push([]);
+       //adds  cols to the empty line:
+       myArr1[i].push( new Array(width));
+
+      
+       for (let j = 0; j < width; j++){
+           //initializes:
+           //console.log('dzialanie i * j: '+i+' * '+j+' ='+i*j);
+           myArr1[i][j] = (1+i)*(j+1);
+           //console.log('myArr1 dla i,j : '+i+' '+j+' = '+ (1+i)*(j+1));
+           //console.log('myArr1:'+myArr1[i][j]);
+        }
+       
+       //console.log("Czy zadeklarowalam tablice dla i:" + i);
+       //console.log('myArr1[i]:'+myArr1[i][1]);
+
+   }
+   //console.log(myArr1[0].length);
+   //console.log(myArr1[0]);
+   //console.log('myArr1 3,3:'+myArr1[1][0]);
+   return myArr1;
+
+      
+  
+   
 };
 
 
