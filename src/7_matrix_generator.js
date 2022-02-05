@@ -1,8 +1,10 @@
-module.exports = function matrixGen() {
+function matrixGen(height, width) {
   // TODO Implement me.
 };
 
+
 /**Weryfikacja */
+module.exports = matrixGen;
 
 function verify(input, goal) {
   if (input === goal) {
