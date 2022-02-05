@@ -1,8 +1,6 @@
 function matrixGen(height, width) {
   let myArr1 = [];
 
-    
- //NIESTETY REULTAT NIE JEST TYM OCZEKIWANYM w weryfikacji, a ja nie widzę różnicy, nie wiem jak to naprawić
  
    for (let i = 0; i < height; i++) {
 
