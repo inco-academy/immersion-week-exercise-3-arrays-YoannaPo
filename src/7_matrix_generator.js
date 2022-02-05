@@ -6,6 +6,7 @@ function matrixGen(height, width) {
 
        //creates empty line
        myArr1.push([]);
+       
        //adds  cols to the empty line:
        myArr1[i].push( new Array(width));
 
