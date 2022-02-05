@@ -39,7 +39,7 @@ function matrixGen(height, width) {
 module.exports = matrixGen;
 
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
