@@ -17,7 +17,7 @@ function averageMinMax(tab) {
         Suma+=el;
     });
 
-return ` ${MinText}${ Min} ${MaxText}${Max} ${AveText}${Suma/Array.length}`;
+return ` ${MinText}${ Min} ${MaxText}${Max} ${AveText}${Suma/Arr.length}`;
   
 
 
