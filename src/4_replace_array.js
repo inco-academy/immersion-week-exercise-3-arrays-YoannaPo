@@ -1,7 +1,8 @@
-let myArr = [];
+
 
 function replaceArray(wordsArray) {
   console.log(wordsArray);
+  let myArr = [];
   
 
   wordsArray.forEach(element => {
@@ -37,6 +38,7 @@ console.log('Index 0 i 1: ' + (myArr[0]) +(myArr[1]));
 });
  return myArr;
  //console.log(myArr)
+//console.log(typeof(myArr));
       
 
 };
