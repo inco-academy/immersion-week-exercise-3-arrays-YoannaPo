@@ -1,9 +1,9 @@
-module.exports = function concatArray() {
+function concatArray() {
   // TODO Implement me.
 };
 
 /* Weryfikacja */
-
+module.exports = concatArray;
 function verify(input, goal) {
   if (input === goal) {
     console.log('Gratulacje!');
