@@ -1,5 +1,12 @@
-function evenIndexes() {
-  // TODO Implement me.
+function evenIndexes(word) {
+  let newArr =[];
+  for (let index = 0; index < word.length; index +=2 ) {
+     newArr.push(word[index]);
+      
+      
+  }
+ return (newArr);
+
 };
 
 /**Weryfikacja */
