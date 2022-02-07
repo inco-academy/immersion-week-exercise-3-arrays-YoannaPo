@@ -1,4 +1,4 @@
-const concatArray = require("./concat_array");
+const concatArray = require("./2_concat_array");
 
 test("Concat dog text", () => {
   expect(concatArray(["Hello", "this", "is", "dog"])).toStrictEqual(

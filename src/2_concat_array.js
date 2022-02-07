@@ -8,7 +8,7 @@ function concatArray(words) {
 /* Weryfikacja */
 module.exports = concatArray;
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
