@@ -1,10 +1,32 @@
-module.exports = function averageMinMax() {
-  // TODO Implement me.
+function averageMinMax(tab) {
+  let Min=0;
+        Max=0;
+        Suma=0;
+        Arr=[];
+        MinText='Min: ';
+        MaxText='Max: ';
+        AveText='Average: ';
+
+    //sortujemy wg --> najmniejsza ma index[0] i zwracamy to do nowej tablicy  
+    Arr=tab.sort((a,b)=>{return a-b})
+    Min=Arr[0];
+    Max=Math.max(...Arr);
+
+    //lecimy petla po starej tablicy
+    tab.forEach(el => {
+        Suma+=el;
+    });
+
+return ` ${MinText}${ Min} ${MaxText}${Max} ${AveText}${Suma/Array.length}`;
+  
+
+
 };
 
 /**Weryfikacja */
+module.exports = averageMinMax;
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
