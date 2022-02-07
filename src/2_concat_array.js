@@ -1,5 +1,8 @@
-function concatArray() {
-  // TODO Implement me.
+
+function concatArray(words) {
+  const myWords = words.join(' ') + '.';
+    
+    return myWords;
 };
 
 /* Weryfikacja */
